@@ -125,6 +125,19 @@ const restArgSample = (...args) => {
 console.log(restArgSample(1, 2));
 //variable args is [1, 2]
 
+//Spread Syntax
+
+const arr1 = [1, 2];
+const arr2 = [3, 4];
+
+console.log([...arr1, ...arr2]);
+
+function add(...args) {
+  console.log(args[0] + args[1]);
+}
+
+add(...arr2);
+
 //Higher Order Function
 
 /* 
